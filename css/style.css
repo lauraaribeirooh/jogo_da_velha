@@ -1,13 +1,27 @@
-main{
+main {
     text-align: center;
 }
 
-.tabuleiro div input{
-width: 100px;
-height: 100px;
-margin: 5px;
-border: 1px solid gray;
-border-radius: 6px;
-font-size: 30px;
-cursor: pointer;
+.tabuleiro div input {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid rgb(66, 200, 253);
+    border-radius: 6px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+h1 {
+    font-size: 3rem;
+    font-variant: small-caps;
+    color: white;
+}
+
+.velha{
+    position: fixed;
 }
