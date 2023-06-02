@@ -8,42 +8,61 @@
     <title>Jogo da velha</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <!--JavaScript-->
-    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <img src="./senhora-das-pessoas-idosas-dos-desenhos-animados-28695831-removebg-preview.png" alt="" class="velha">
+    <img src="./jovens titãns.png" alt="" class="velha">
+    <img src="./gif-jovens-titãns.gif" alt="" class="personagem">
     <main>
+
         <section>
             <h1>Jogo da Velha</h1>
         </section>
-        <section class="tabuleiro">
+
+        <section id="containerPersonagens" class="containerPersonagens">
+            <h2>Selecione o <span id="ordemPersonagem">1º</span> personagem</h2>
+            <div>
+                <input type="button" value=" " id="perso1" onclick="clickPerso('robin')">
+                <input type="button" value=" " id="perso2" onclick="clickPerso('ravena')">
+                <input type="button" value=" " id="perso3" onclick="clickPerso('estelar')">
+            </div>
+            <div>
+                <input type="button" value=" " id="perso4" onclick="clickPerso('cyborg')">
+                <input type="button" value=" " id="perso5" onclick="clickPerso('mutano')">
+                <input type="button" value=" " id="perso6" onclick="clickPerso('silkie')">
+            </div>
+        </section>
+
+        <section id="containerTabuleiro" class="tabuleiro">
             <div>
                 <input type="button" value=" " id="btn1" onclick="clickBtn1()">
-                <input type="button" value=" " id="btn2" onclick="clickBnt2()">
-                <input type="button" value=" " id="btn3" onclick="clickBnt3()">
+                <input type="button" value=" " id="btn2" onclick="clickBtn2()">
+                <input type="button" value=" " id="btn3" onclick="clickBtn3()">
             </div>
             <div>
-                <input type="button" value=" " id="btn4" onclick="clickBnt4()">
-                <input type="button" value=" " id="btn5" onclick="clickBnt5()">
-                <input type="button" value=" " id="btn6" onclick="clickBnt6()">
+                <input type="button" value=" " id="btn4" onclick="clickBtn4()">
+                <input type="button" value=" " id="btn5" onclick="clickBtn5()">
+                <input type="button" value=" " id="btn6" onclick="clickBtn6()">
             </div>
             <div>
-                <input type="button" value=" " id="btn7" onclick="clickBnt7()">
-                <input type="button" value=" " id="btn8" onclick="clickBnt8()">
-                <input type="button" value=" " id="btn9" onclick="clickBnt9()">
+                <input type="button" value=" " id="btn7" onclick="clickBtn7()">
+                <input type="button" value=" " id="btn8" onclick="clickBtn8()">
+                <input type="button" value=" " id="btn9" onclick="clickBtn9()">
             </div>
+
+            <section>
+                <h2>
+                    <span id="lblJogador">Jogador 1</span>
+                    <span id="lblJogadas">(1ª Jogada)</span>
+                </h2>
+
+                <input type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()">
+            </section>
         </section>
-        <section>
-            <h2>
-                <span id="lblJogador">Jogador X</span>
-                <span id="lblJogadas">(1ª Jogada)</span>
-            </h2>
-            <input type="button" value="Reiniciar"
-            id="btnReiniciar" onclick="clickReiniciar()">
-        </section>
-         </main>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
